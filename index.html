@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Hanoosh Café – Restaurant & Coffee Shop in Hargeisa, Somaliland. Breakfast, brunch, premium coffee, pastries & fresh flavors. Jigjiga Yar, opposite Sun Hotel.">
+    <title>Hanoosh Café – Hargeisa | Restaurant & Coffee Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ═══ NAV ═══ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#" class="logo">
+                <span class="logo-mark">H</span>
+                <span class="logo-text">Hanoosh <em>Café</em></span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#accueil">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#galerie">Gallery</a></li>
+                <li><a href="#apropos">About</a></li>
+                <li><a href="#avis">Reviews</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-cta">
+                <a href="#reserver" class="btn-reserve">
+                    <span class="dot"></span>
+                    Book a Table
+                </a>
+            </div>
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </nav>
+
+    <!-- ═══ HERO ═══ -->
+    <section class="hero" id="accueil">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-grain"></div>
+        <div class="hero-vignette"></div>
+
+        <!-- Decorative corners -->
+        <div class="hero-corner hero-corner-tl"></div>
+        <div class="hero-corner hero-corner-br"></div>
+
+        <!-- Side labels -->
+        <div class="hero-side hero-side-left">
+            <span class="hero-side-label">EST. 2021</span>
+        </div>
+        <div class="hero-side hero-side-right">
+            <span class="hero-side-label">Hargeisa · Somaliland</span>
+        </div>
+
+        <div class="hero-content">
+            <div class="hero-tag fade-in-seq">
+                <span class="tag-dot"></span>
+                <span>Restaurant &amp; Coffee Shop</span>
+                <span class="tag-sep">·</span>
+                <span>Since 2021</span>
+            </div>
+            <h1 class="fade-in-seq">
+                <span class="h1-line-1">Welcome to</span>
+                <span class="h1-line-2"><em>Hanoosh</em> Café</span>
+            </h1>
+            <p class="fade-in-seq">Where every cup is crafted with care and every dish is made with love.</p>
+            <div class="hero-buttons fade-in-seq">
+                <a href="#menu" class="btn-primary">
+                    <span>Explore Menu</span>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+                </a>
+                <a href="#reserver" class="btn-outline">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    <span>Book a Table</span>
+                </a>
+            </div>
+            <div class="hero-stats fade-in-seq">
+                <div class="stat">
+                    <strong>4.5K+</strong>
+                    <span>Instagram Followers</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong id="heroOpen">7 AM</strong>
+                    <span>Opens Daily</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat">
+                    <strong>100%</strong>
+                    <span>Fresh &amp; Homemade</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-scroll">
+            <span>Scroll to discover</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- ═══ MENU ═══ -->
+    <section class="menu-section" id="menu">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="tag">Our Delights</span>
+                <h2>The Menu</h2>
+                <div class="divider"></div>
+                <p>Premium quality in everything — food, drinks, service and atmosphere.</p>
+            </div>
+            <div class="menu-filters fade-up" id="menuFilters"></div>
+            <div class="menu-grid" id="menuGrid"></div>
+        </div>
+    </section>
+
+    <!-- ═══ GALLERY ═══ -->
+    <section class="galerie-section" id="galerie">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="tag">Our World</span>
+                <h2>Gallery</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="galerie-grid fade-up" id="galerieGrid">
+                <!-- Generated by JS from localStorage -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ ABOUT ═══ -->
+    <section class="apropos-section" id="apropos">
+        <div class="container">
+            <div class="apropos-grid">
+                <div class="apropos-images fade-up">
+                    <div class="apropos-img-main"><img src="images/hanoosh-interior-2.webp" alt="Inside Hanoosh Café">
+                    </div>
+                    <div class="apropos-img-float"><img src="images/hanoosh-interior-1.webp" alt="Lounge"></div>
+                    <div class="apropos-badge">☕<span>Hargeisa</span></div>
+                </div>
+                <div class="apropos-text fade-up">
+                    <span class="tag">Our Story</span>
+                    <h2>About <em>Hanoosh Café</em></h2>
+                    <div class="divider divider-left"></div>
+                    <p>At Hanoosh Café, we believe that food and coffee are more than nourishment — they are experiences
+                        meant to be savored. Each dish and drink is crafted with care, attention to detail, and deep
+                        respect for flavor.</p>
+                    <p>Our menu blends tradition with creativity, drawing inspiration from global flavors and local
+                        Somali favorites. Beyond food, Hanoosh is a place to pause, breathe, and belong.</p>
+                    <div class="values-row">
+                        <div class="value-chip">🌍 Premium Beans</div>
+                        <div class="value-chip">👨‍🍳 Made with Love</div>
+                        <div class="value-chip">📶 Free Wi-Fi</div>
+                        <div class="value-chip">🏠 Feel Like Home</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ REVIEWS ═══ -->
+    <section class="avis-section" id="avis">
+        <div class="container">
+            <div class="section-header fade-up">
+                <span class="tag">Testimonials</span>
+                <h2>What Our Guests Say</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="avis-grid fade-up">
+                <div class="avis-card">
+                    <div class="avis-quote">"</div>
+                    <p>The best coffee in Hargeisa! The breakfast is amazing and the atmosphere feels like home.</p>
+                    <div class="avis-footer">
+                        <div class="avis-avatar">A</div>
+                        <div><strong>Amina H.</strong><span>★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="avis-card">
+                    <div class="avis-quote">"</div>
+                    <p>Perfect for work and relaxation. Fast Wi-Fi, excellent coffee, divine pastries. My second office!</p>
+                    <div class="avis-footer">
+                        <div class="avis-avatar">M</div>
+                        <div><strong>Mohamed K.</strong><span>★★★★★</span></div>
+                    </div>
+                </div>
+                <div class="avis-card">
+                    <div class="avis-quote">"</div>
+                    <p>Brought my family for brunch and everyone loved it. Fresh food, warm service!</p>
+                    <div class="avis-footer">
+                        <div class="avis-avatar">F</div>
+                        <div><strong>Fatima O.</strong><span>★★★★★</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ RESERVATION ═══ -->
+    <section class="reservation-section" id="reserver">
+        <div class="reservation-bg"></div>
+        <div class="container">
+            <div class="reservation-content fade-up">
+                <span class="tag">Reservation</span>
+                <h2>Book Your Table</h2>
+                <div class="divider"></div>
+                <p>Reserve now to guarantee your spot at Hanoosh Café.<br><span id="bookHours">Open daily 7 AM – 11 PM</span></p>
+                <div class="res-form">
+                    <div class="form-row"><input type="text" placeholder="Your name" id="resName"><input type="tel"
+                            placeholder="Phone" id="resPhone"></div>
+                    <div class="form-row"><input type="date" id="resDate"><input type="time" id="resTime"></div>
+                    <div class="form-row"><select id="resGuests">
+                            <option value="">Guests</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6+</option>
+                        </select><input type="text" placeholder="Special request" id="resNote"></div>
+                    <button class="btn-primary btn-full" id="btnReserve">📅 Confirm Reservation</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header fade-up"><span class="tag">Find Us</span>
+                <h2>Contact</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info fade-up">
+                    <div class="contact-card">
+                        <div class="cc-icon">📍</div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Jigjiga Yar, Opposite Sun Hotel<br>Hargeisa, Somaliland</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="cc-icon">📞</div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+252 63 573999</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="cc-icon">🕐</div>
+                        <div>
+                            <h4>Hours</h4>
+                            <p id="contactHours">Open daily: 7 AM – 11 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="cc-icon">📸</div>
+                        <div>
+                            <h4>Social</h4>
+                            <p><a href="https://instagram.com/hanoosh.cafe" target="_blank">@hanoosh.cafe</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrap fade-up">
+                    <h3>Send a message</h3>
+                    <div class="contact-form">
+                        <input type="text" placeholder="Your name" id="contactName">
+                        <input type="email" placeholder="Your email" id="contactEmail">
+                        <textarea placeholder="Your message..." rows="4" id="contactMsg"></textarea>
+                        <button class="btn-primary btn-full" id="btnContact">✉️ Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="map-wrap fade-up">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3897.2!2d44.064!3d9.56!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1628c15baaaaaaab%3A0xaaaaaaaaaaaaaaa!2sHargeisa!5e0!3m2!1sen!2s!4v1700000000!5m2!1sen!2s"
+                    width="100%" height="350" style="border:0;border-radius:16px;" allowfullscreen
+                    loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- ═══ FOOTER ═══ -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <h3>☕ Hanoosh <span>Café</span></h3>
+                    <p>Crafted with care in Hargeisa, Somaliland.</p>
+                </div>
+                <div class="footer-nav"><a href="#accueil">Home</a><a href="#menu">Menu</a><a
+                        href="#galerie">Gallery</a><a href="#apropos">About</a><a href="#contact">Contact</a></div>
+                <div class="footer-social">
+                    <a href="https://instagram.com/hanoosh.cafe" target="_blank">IG</a>
+                    <a href="https://tiktok.com/@hanoosh_cafe" target="_blank">TK</a>
+                    <a href="https://snapchat.com/@hanooshmohasn" target="_blank">SC</a>
+                    <a href="#">FB</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Hanoosh Café — All rights reserved.</p>
+                <a href="settings.html" class="footer-admin">⚙️ Admin</a>
+                <a href="orders.html" class="footer-admin">👨‍🍳 Kitchen</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating -->
+    <a href="https://wa.me/25263573999" target="_blank" class="whatsapp-float" aria-label="WhatsApp">💬</a>
+    <button class="back-top" id="backToTop" aria-label="Top">↑</button>
+
+    <!-- ═══ CART FLOATING BUTTON ═══ -->
+    <button class="cart-fab" id="cartFab" aria-label="View cart">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+        <span class="cart-fab-badge" id="cartBadge">0</span>
+    </button>
+
+    <!-- ═══ CART DRAWER ═══ -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+        <div class="cart-head">
+            <h3>Your Order</h3>
+            <button class="cart-close" id="cartClose" aria-label="Close">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+        </div>
+        <div class="cart-body" id="cartBody">
+            <!-- Generated -->
+        </div>
+        <div class="cart-foot" id="cartFoot">
+            <div class="cart-total-row">
+                <span>Total</span>
+                <strong id="cartTotal">$0.00</strong>
+            </div>
+            <button class="btn-primary btn-full" id="btnCheckout">
+                <span>Proceed to Checkout</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </button>
+        </div>
+    </aside>
+
+    <!-- ═══ ITEM CUSTOMIZE MODAL ═══ -->
+    <div class="customize-overlay" id="customizeOverlay">
+        <div class="customize-box">
+            <button class="customize-close" id="customizeClose" aria-label="Close">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+            </button>
+            <div class="customize-img"><img id="custImg" src="" alt=""></div>
+            <div class="customize-content">
+                <h3 id="custName"></h3>
+                <p id="custDesc"></p>
+                <div class="custom-section" id="custOptionsWrap">
+                    <h4>Customize</h4>
+                    <div class="custom-options" id="custOptions"></div>
+                </div>
+                <div class="custom-section">
+                    <h4>Special note</h4>
+                    <textarea id="custNote" placeholder="e.g. No onions, extra sauce, well-done..." rows="2"></textarea>
+                </div>
+                <div class="custom-section">
+                    <h4>Quantity</h4>
+                    <div class="qty-control">
+                        <button class="qty-btn" id="qtyMinus" aria-label="Decrease">−</button>
+                        <span class="qty-value" id="qtyValue">1</span>
+                        <button class="qty-btn" id="qtyPlus" aria-label="Increase">+</button>
+                    </div>
+                </div>
+                <button class="btn-primary btn-full btn-add-cart" id="btnAddToCart">
+                    <span>Add to Cart</span>
+                    <span class="btn-price" id="custPrice">$0.00</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ CHECKOUT MODAL ═══ -->
+    <div class="checkout-overlay" id="checkoutOverlay">
+        <div class="checkout-box">
+            <div class="checkout-head">
+                <h3>Complete Your Order</h3>
+                <button class="checkout-close" id="checkoutClose" aria-label="Close">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                </button>
+            </div>
+            <div class="checkout-body">
+                <div class="order-type">
+                    <label class="order-type-opt active" data-type="dine-in">
+                        <input type="radio" name="orderType" value="dine-in" checked>
+                        <div class="order-type-icon">🍽️</div>
+                        <div>
+                            <div class="order-type-title">Dine In</div>
+                            <div class="order-type-sub">Eat at the café</div>
+                        </div>
+                    </label>
+                    <label class="order-type-opt" data-type="takeaway">
+                        <input type="radio" name="orderType" value="takeaway">
+                        <div class="order-type-icon">🥡</div>
+                        <div>
+                            <div class="order-type-title">Takeaway</div>
+                            <div class="order-type-sub">Take it home</div>
+                        </div>
+                    </label>
+                </div>
+                <div class="checkout-form">
+                    <div class="ch-group">
+                        <label>Your name</label>
+                        <input type="text" id="chName" placeholder="e.g. Ahmed">
+                    </div>
+                    <div class="ch-group" id="chTableGroup">
+                        <label>Table number</label>
+                        <input type="text" id="chTable" placeholder="e.g. 5, 12, A3...">
+                    </div>
+                    <div class="ch-group" id="chPhoneGroup" style="display:none">
+                        <label>Phone number</label>
+                        <input type="tel" id="chPhone" placeholder="+252...">
+                    </div>
+                </div>
+                <div class="checkout-summary">
+                    <div class="cs-row"><span>Items</span><span id="csItems">0</span></div>
+                    <div class="cs-row cs-total"><span>Total</span><strong id="csTotal">$0.00</strong></div>
+                </div>
+                <button class="btn-primary btn-full" id="btnPlaceOrder">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+                    <span>Place Order</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- ═══ ORDER CONFIRMED MODAL ═══ -->
+    <div class="confirmed-overlay" id="confirmedOverlay">
+        <div class="confirmed-box">
+            <div class="confirmed-check">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <h3>Order Received!</h3>
+            <p>Your order has been sent to the kitchen.</p>
+            <div class="order-number">Order <strong id="orderNum">#000</strong></div>
+            <p class="confirmed-wait">We'll prepare it right away. Thanks for choosing Hanoosh!</p>
+            <button class="btn-primary" id="confirmedClose">Continue</button>
+        </div>
+    </div>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox"><button class="lb-close" id="lightboxClose">✕</button><img src="" alt=""
+            id="lightboxImg"></div>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <div class="modal-icon">✅</div>
+            <h3 id="modalTitle">Done</h3>
+            <p id="modalMessage">OK</p><button class="btn-primary" id="modalClose">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
